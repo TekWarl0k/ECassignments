@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<title>Övning 5.3</title>
+<meta charset="utf-8">
+    <style>
+        nav {
+            background-color: antiquewhite;
+            border: 2px black;
+        }
+        li {
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10%;
+            background-color: dimgrey;
+            padding: 5px;
+        }
+        a {
+            text-decoration: none;
+        }
+        div {
+            display: inline-flex; flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="row">
+            <li><a href="https://www.inet.se/">Inet</a></li>
+            <li><a href="http://www.sfbok.se/">Sfbok</a></li>
+            <li><a href="https://www.games-workshop.com">Games Workshop</a></li>
+        </ul>
+    </nav>
+    <form>
+    <h2>Enorm skum sida för att betala fakturor</h2>
+        Konto:
+        <input type="text" name="konto"><br>
+            <div>
+                <input type="radio" name="kontotyp" value="PG" checked> PG<br>
+                <input type="radio" name="kontotyp" value="BG" checked> BG<br>
+                <input type="radio" name="kontotyp" value="Privat" checked> Privat konto
+            </div>
+        <br>
+        Datum:
+        <input type="text" name="datum"><br>
+        <textarea rows="4" cols="50"></textarea><br>
+        <input type="submit" name="submit">
+    </form>
+</body>
+</html>

@@ -7,6 +7,7 @@
         nav {
             background-color: antiquewhite;
             border: 2px black;
+            width: 375px;
         }
         li {
             display: inline-block;
@@ -21,6 +22,11 @@
         div {
             display: inline-flex; flex-direction: row;
         }
+        form {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            width: 375px;
+        }
     </style>
 </head>
 <body>
@@ -32,19 +38,39 @@
         </ul>
     </nav>
     <form>
-    <h2>Enorm skum sida för att betala fakturor</h2>
-        Konto:
-        <input type="text" name="konto"><br>
+    <h2>Enormt skum sida för att betala fakturor</h2>
+        <br>
+        <datalist id="banklista">
+            <option>Nordea</option>
+            <option>Handelsbanken</option>
+            <option>Swedbank</option>
+            <option>Annan bank</option>
+        </datalist>
+        <label for="banklista">Din bank:</label>
+        <input type="text" list="banklista"/>
+        <br>
+        Kontonummer:
+        <input type="text" name="dinbank">
+        <br>
+        <h3>Mottagare</h3>
             <div>
                 <input type="radio" name="kontotyp" value="PG" checked> PG<br>
                 <input type="radio" name="kontotyp" value="BG" checked> BG<br>
                 <input type="radio" name="kontotyp" value="Privat" checked> Privat konto
             </div>
         <br>
+        Kontonummer
+        <input type="text" name="mottagare">
+        <br>
         Datum:
-        <input type="text" name="datum"><br>
-        <textarea rows="4" cols="50"></textarea><br>
-        <input type="submit" name="submit">
+        <input type="text" name="datum">
+        <br>
+        <textarea rows="4" cols="50"></textarea>
+        <br>
+        <input type="checkbox" name="villkor" value="">
+        <label for="villkor" >Godkänn villkor</label>
+        <br>
+        <button type="button">Bekräfta</button>        
     </form>
 </body>
 </html>

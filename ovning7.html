@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <title>Övning 7</title>
+    <meta charset="utf-8">
+    <style>
+        div {
+            border: 2px solid black;
+            padding: 2px
+        }
+        .flex {
+            display: inline-flex; flex-direction: row;
+        }
+        @media (min-width: 600px) and (max-width: 1050px) {
+            body {
+                border: 2px solid red;
+                display: inline-flex; 
+                flex-direction: column;
+            }
+            .flex {
+                 display: inline-flex; flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div>Alpha</div>
+        <div>Bravo</div>
+        <div>Charlie</div>
+    </div>
+</body>
+</html>

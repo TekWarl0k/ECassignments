@@ -31,7 +31,7 @@
 </head>
 <body>
     <nav>
-        <ul class="row">
+        <ul>
             <li><a href="https://www.inet.se/">Inet</a></li>
             <li><a href="http://www.sfbok.se/">Sfbok</a></li>
             <li><a href="https://www.games-workshop.com">Games Workshop</a></li>
@@ -54,9 +54,12 @@
         <br>
         <h3>Mottagare</h3>
             <div>
-                <input type="radio" name="kontotyp" value="PG" checked> PG<br>
-                <input type="radio" name="kontotyp" value="BG" checked> BG<br>
-                <input type="radio" name="kontotyp" value="Privat" checked> Privat konto
+                <input type="radio" name="kontotyp" id="PG" value="PG">
+                <label for="PG">PG</label><br>
+                <input type="radio" name="kontotyp" id="BG" value="BG">
+                <label for="BG">BG</label><br>
+                <input type="radio" name="kontotyp" id="Privat" value="Privat">
+                <label for="Privat">Privat Konto</label>
             </div>
         <br>
         Kontonummer
@@ -67,9 +70,7 @@
         <br>
         <textarea rows="4" cols="50"></textarea>
         <br>
-        <input type="checkbox" name="villkor" value="">
-        <label for="villkor" >Godkänn villkor</label>
-        <br>
+        <input type="checkbox" name="villkor" value="Privat">Godkänn Villkor<br>
         <button type="button">Bekräfta</button>        
     </form>
 </body>
